@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background: #000; */
+    font-family: "Roboto", sans-serif;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.clear::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+}
+
+button{
+    background: transparent;
+    border: none;
+}
+
+/* Header Section Style Start */
+.header{
+    background: rgba(0,0,0, .5);
+    color: #fff;
+    /* padding: 12px 0; */
+    margin-bottom: 0px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    
+}
+.header .left-logo{
+    width: 30%;
+}
+.header .left-logo img{
+    width: 200px;
+    display: inline-block;
+    margin-top: 10px;
+    
+}
+.header .right-menu{}
+.header .right-menu ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+.header .right-menu ul li{
+    display: inline-block;
+}
+.header .right-menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 16px 30px;
+    color: #fff;
+    font-weight: 600;
+    transition: .6s; 
+  
+}
+.header .right-menu ul li a:hover{
+    border-bottom: 5px solid #ad8043;   
+}
+/* .header .right-menu ul li:last-child a{
+    padding-right: 0;
+} */
+.header .right-menu ul > li:hover a{
+    color: #ad8043;
+    
+}
+
+/* Dropdown style start */
+.header .right-menu ul li{
+    position: relative;
+    
+}
+.header .right-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 230px;
+    background: #fafafa;
+    color: #000;
+    padding-left: 0;
+    text-align: center;
+    display: block;
+    transition: .5s;
+}
+.header .right-menu ul li ul li{
+    display: block;   
+}
+
+.header .right-menu ul li ul li a{
+  display: block; 
+   text-align: center;
+   color: #000 !important;
+   transition: .5s;
+   border-bottom: none;
+   
+}
+.header .right-menu ul li ul li a:hover{
+background: #c7c7c7;
+color: #ad8043 !important;
+border-bottom: none;
+
+}
+/* Dropdown style End */
+.header .right-menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: center center;
+}
+.header .right-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    
+}
+/* Menu Hover Part Start */
+
+/* Menu Hover Part End */
+
+/* Header Section Style End */
+
+/* Banner Section Style Start */
+.banner{
+    background-image: linear-gradient(rgba(0,0,0, .35), rgba(0,0,0, .35)), url(https://img.hotimg.com/banner5b8708e479f8a53c.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 0;
+    text-align: center;
+    color: #fff;
+    font-family: "Merriweather Sans", sans-serif;
+    
+}
+.banner h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+.banner h3{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 25px 0;
+}
+.banner .btn-banner{
+    display: inline-block;
+    padding: 12px 40px;
+    text-decoration: none;
+    background: #c69453;
+    color: #fff;
+    border-radius: 100px;
+    display: inline-block;
+    transition: .8s;
+}
+
+.banner .btn-banner:hover{
+    background: #fff;
+    color: #ad8043;
+}
+/* Banner Section Style End */
+
+/* Service Section Style Start */
+.service{
+    padding: 100px 0;
+    background: #f8f8f8;
+    text-align: center;   
+}
+.service .s-card-box{
+    width: 1055px;
+    margin: auto;
+}
+.service .s-card{
+    width: 240px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    text-align: center;
+    background: #fff;
+    border-radius: 4px;
+    transition: .5s;
+      
+}
+.service .s-card img{
+    margin-top: 10px;
+    transform: rotate(0);
+    transition: .5s;
+}
+.service .s-card h6{
+    margin-top: 25px;
+}
+.service .s-card p{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.service .s-card button .btn-card{
+    background: #ad8043;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: .5s;
+}
+.m-right{
+    margin-right: 30px;
+}
+/* Service Hovar Part Start */
+.service .s-card:hover{
+    background: #e8e6e4;
+}
+.service .s-card:hover img{
+transform: rotate(360deg);
+}
+.service .s-card:hover .btn-card{
+background: #fff;
+color: #ad8043;
+}
+.service .s-card button .btn-card:hover{
+    background: #000;
+    color: #fff;
+}
+/* Service Hovar Part End*/
+/* Service Section Style Start */
+
+/* About Section Style Start */
+.about{
+    padding: 100px 0;
+    background: #f8f8f8;
+}
+.about .left-video{
+    width: 48%;
+}
+.about .right-article{
+    width: 48%;
+}
+.about .right-article h1{
+    font-weight: 900;
+}
+.about .right-article h1 span{
+    color: #c69453;
+    margin-left: -8px;
+}
+.about .right-article p{
+    padding: 12px 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.btn-atl{
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.btn-atl:hover{
+    background: #ad8043;
+    color: #fff;
+}
+/* About Section Style End */
+
+/* Contact Form Style Start */
+.contact-form{
+    background: #f8f8f8;
+}
+.contact-form .container{
+    background-image: url(https://img.hotimg.com/ia_200000022.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 100px 0;
+}
+.contact-form .left-content{
+    width: 53%;
+}
+.contact-form .left-content h3{
+    font-weight: 900;
+}
+.contact-form .left-content p{
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+.contact-form .left-content form{
+    width: 100%;
+}
+.contact-form .left-content form input{
+    width: 92%;
+    margin-top: 10px;
+    padding: 15px 12px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0, .2);
+}
+.contact-form .left-content form textarea{
+    width: 92%;
+    margin-top: 10px;
+    padding: 15px 12px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0, .2);
+}
+.contact-form .left-content form .btn-submit{
+    background: #ad8043;
+    width: 150px;
+    color: #fff;
+    padding: 12px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+/* Contact Form Style End */
+
+/* Footer Section Style Start */
+footer{
+    background: #6d6d6d;
+    color: #fff;
+    padding: 15px 0;
+}
+
+footer .left-footer-content p{
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer .right-social-menu a{
+    text-decoration: none;
+    color: #fff;
+    padding-left: 20px;
+}
+/* Footer Section Style End */
